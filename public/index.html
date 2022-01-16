@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <a id="getWeatherSwitcher" href="#">Ввести широту и долготу</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div id="long-lat">
+                    <label for="lat-input">Широта: </label></br>
+                    <input id="lat-input" name="lat-input" type="number" min="-90" max="90" step="0.01"></br>
+                    <label for="long-input">Долгота: </label></br>
+                    <input id="long-input" name="long-input" type="number" min="-180" max="180" step="0.01"></br>
+                    <button id="long-lat-btn">Получить прогноз</button></br>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="city">
+                    <label for="city">Город</label></br>
+                    <input id="city-input" name="city" type="text"></input>
+                    </br>
+                    <label for="countryCd-input">Код страны</label></br>
+                    <input id="countryCd-input" name="countryCd-input" type="text"></input>
+                    </br>
+                    <button id="city-btn">Получить прогноз</button></br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="weather">
+                    <div class="current">
+                        <div class="info">
+                            <div>&nbsp;</div>
+                            <div class="city"></div>
+                            <div class="temp"></div>
+
+                            <div class="wind"></div>
+                            <div>&nbsp;</div>
+                        </div>
+                        <div class="icon"><img id="icon" src="" alt="" /></div>
+                    </div>
+                    <div class="future">
+                        <div class="day">
+                            <h3 class="day-0-name"></h3>
+                            <p class="temp day-0-temp"></p>
+                            <img id="day-0-icon" src="" alt="" />
+                        </div>
+                        <div class="day">
+                            <h3 class="day-1-name"></h3>
+                            <p class="temp day-1-temp"></p>
+                            <img id="day-1-icon" src="" alt="" />
+                        </div>
+                        <div class="day">
+                            <h3 class="day-2-name"></h3>
+                            <p class="temp day-2-temp"></p>
+                            <img id="day-2-icon" src="" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

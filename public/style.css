@@ -1,0 +1,96 @@
+.weather {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(119, 180, 160);
+    box-shadow: 0px 1px 10px 0px #4eec05;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.weather .current {
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(32, 240, 195);
+    padding: 20px;
+    text-shadow: 1px 1px rgb(9, 134, 51);
+}
+
+.weather .current .info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+
+.weather .current .info .city {
+    font-size: 26px;
+}
+
+.weather .current .info .temp {
+    font-size: 56px;
+}
+
+.weather .current .info .wind {
+    font-size: 24px;
+}
+
+.weather .current .icon {
+    text-align: center;
+    font-size: 64px;
+    flex-grow: 1;
+}
+
+.weather .future {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.weather .future .day {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weather .future .day:hover {
+    color: #fff;
+    background-color: rgb(7, 148, 82);
+}
+
+.weather .future .day h3 {
+    text-transform: uppercase;
+}
+
+.weather .future .day p {
+    font-size: 16px;
+}
+
+#getWeatherSwitcher {
+    color: rgb(5, 68, 54);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+label {
+    color: rgb(5, 68, 54);
+    font-size: 14px;
+    font-weight: bold
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(119, 180, 160);
+    color: rgb(5, 68, 54);
+    border-radius: 8px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: rgb(7, 148, 82);
+}
+
+input {
+    padding: 10px;
+    width: 25%;
+}
